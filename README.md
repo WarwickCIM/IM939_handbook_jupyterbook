@@ -5,9 +5,17 @@
 This repository contains the labs' handbook for [IM939: Data Science Across Disciplines](https://cagatayturkay.github.io/data-science-across-disciplines), created by Carlos Cámara-Menoyo, Cagatay Turkay and James Tripp.
 
 ![IM939 Logo](IM939_logo.png)
+
 ## Handbook
 
 The handbook uses [jupyter-book](https://jupyterbook.org/en/stable/intro.html).
+
+Publishing book to github pages:
+
+```
+ghp-import -n -p -f _build/html
+```
+
 
 ## Virtual environments
 
@@ -40,6 +48,12 @@ conda env update -f environment.yml
 ```
 
 **Recreate virtual environment from `environment.yml`:**
+
+```
+conda env create -f environment.yml
+```
+
+or, if we want to install the environment within the project:
 
 ```
 conda env create --prefix env -f environment.yml
