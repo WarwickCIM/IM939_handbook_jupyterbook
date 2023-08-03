@@ -4,6 +4,7 @@
 
 This repository contains the labs' handbook for [IM939: Data Science Across Disciplines](https://cagatayturkay.github.io/data-science-across-disciplines), created by Carlos Cámara-Menoyo, Cagatay Turkay and James Tripp.
 
+![IM939 Logo](IM939_logo.png)
 ## Handbook
 
 The handbook uses [jupyter-book](https://jupyterbook.org/en/stable/intro.html).
