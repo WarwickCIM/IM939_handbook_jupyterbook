@@ -4,6 +4,10 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+#- file: path/to/chapter1
+#- file: path/to/chapter2
+- file: jupyterbook-demo/jupyterbook.md
+  sections:
+  - file: jupyterbook-demo/markdown
+  - file: jupyterbook-demo/notebooks
+  - file: jupyterbook-demo/markdown-notebooks
