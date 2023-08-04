@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WarwickCIM/IM939_handbook/main)
+[![pages-build-deployment](https://github.com/WarwickCIM/IM939_handbook/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/WarwickCIM/IM939_handbook/actions/workflows/pages/pages-build-deployment) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WarwickCIM/IM939_handbook/main)
 
 # Data Science Across Disciplines' handbook
 
