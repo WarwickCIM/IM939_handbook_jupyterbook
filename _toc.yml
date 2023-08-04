@@ -9,7 +9,7 @@ parts:
     - file: content/sessions/session-01.md
   - caption: Labs
     chapters:
-    - file: content/labs/lab-01.md
+    - file: content/labs/week1/IM939 Lab 1 - Part 1.ipynb
   - caption: Jupyterbook Demo
     chapters:
       - file: content/jupyterbook-demo/jupyterbook.md
