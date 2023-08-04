@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Science Across Disciplines’ labs &#8212; My sample book</title>
+    <title>Data Science Across Disciplines’ handbook &#8212; My sample book</title>
   
   
   
@@ -61,6 +61,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
+    <link rel="shortcut icon" href="_static/CIM_logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -128,7 +129,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -148,15 +149,28 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                <a class="reference internal" href="index.html">
+                    Data Science Across Disciplines
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sessions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="content/sessions/session-01.html">Introduction, Historical Perspectives &amp; Basic Concepts</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Labs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="content/labs/lab-01.html">Lab 01</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Jupyterbook Demo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/jupyterbook-demo/jupyterbook.html">Annex: Jupyterbook examples</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterbook-demo/intro.html">Welcome to your Jupyter Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterbook-demo/markdown.html">Markdown Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterbook-demo/notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/jupyterbook-demo/markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -222,6 +236,23 @@ const thebe_selector_output = ".output, .cell_output"
   <i class="fab fa-github"></i>
   </span>
 <span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/WarwickCIM/IM939_handbook/edit/main/README.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
 </a>
 </li>
       
@@ -340,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data Science Across Disciplines’ labs</h1>
+    <h1>Data Science Across Disciplines’ handbook</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -350,11 +381,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Science Across Disciplines’ labs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#handbook">Handbook</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environments">Virtual environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#handbook">Handbook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environments">Virtual environments</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -366,17 +395,20 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <p><a class="reference external" href="https://mybinder.org/v2/gh/WarwickCIM/IM939_handbook/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<section id="data-science-across-disciplines-labs">
-<h1>Data Science Across Disciplines’ labs<a class="headerlink" href="#data-science-across-disciplines-labs" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="data-science-across-disciplines-handbook">
+<h1>Data Science Across Disciplines’ handbook<a class="headerlink" href="#data-science-across-disciplines-handbook" title="Permalink to this headline">#</a></h1>
 <p>This repository contains the labs’ handbook for <a class="reference external" href="https://cagatayturkay.github.io/data-science-across-disciplines">IM939: Data Science Across Disciplines</a>, created by Carlos Cámara-Menoyo, Cagatay Turkay and James Tripp.</p>
 <p><img alt="IM939 Logo" src="_images/IM939_logo.png" /></p>
-</section>
 <section id="handbook">
-<h1>Handbook<a class="headerlink" href="#handbook" title="Permalink to this headline">#</a></h1>
+<h2>Handbook<a class="headerlink" href="#handbook" title="Permalink to this headline">#</a></h2>
 <p>The handbook uses <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">jupyter-book</a>.</p>
+<p>Publishing book to github pages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
+</pre></div>
+</div>
 </section>
 <section id="virtual-environments">
-<h1>Virtual environments<a class="headerlink" href="#virtual-environments" title="Permalink to this headline">#</a></h1>
+<h2>Virtual environments<a class="headerlink" href="#virtual-environments" title="Permalink to this headline">#</a></h2>
 <p>Virtual environments are a way to install all the dependencies (and their right version) required for a certain project by isolating python and libraries’ specific versions. Every person who recreatesthe virtual environment will be using the same packages and versions, reducing errors and increasing reproducibility.</p>
 <p>In this project, virtual environments are managed by <code class="docutils literal notranslate"><span class="pre">conda</span></code>, which means that you should have <a class="reference external" href="https://www.anaconda.com">Anaconda distribution</a> installed (Read <a class="reference external" href="https://www.anaconda.com/distribution/">installing instructions on their website</a>)</p>
 <p><strong>Activate virtual environment</strong></p>
@@ -408,6 +440,7 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -459,11 +492,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Science Across Disciplines’ labs</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#handbook">Handbook</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environments">Virtual environments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#handbook">Handbook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#virtual-environments">Virtual environments</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
