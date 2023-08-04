@@ -3,7 +3,7 @@
 
 title: My sample book
 author: Carlos Cámara-Menoyo, James Tripp, Cagatay Turkay
-logo: IM939_logo.png
+logo: media/IM939_logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -36,3 +36,4 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
+  favicon: media/CIM_logo.png
