@@ -1,6 +1,6 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WarwickCIM/IM939_handbook/main)
 
-## Data Science Across Disciplines' labs
+# Data Science Across Disciplines' handbook
 
 This repository contains the labs' handbook for [IM939: Data Science Across Disciplines](https://cagatayturkay.github.io/data-science-across-disciplines), created by Carlos Cámara-Menoyo, Cagatay Turkay and James Tripp.
 
