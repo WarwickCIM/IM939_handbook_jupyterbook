@@ -34,8 +34,3 @@ Anyway, for demoin purposes, this is an automated table of contents below:
 
 ```{tableofcontents}
 ```
-
-
-
-
-
