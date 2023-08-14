@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: Carlos Cámara-Menoyo, James Tripp, Cagatay Turkay
+title: Data Science Across Disciplines
+author: Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
 logo: media/IM939_logo.png
 
 # Force re-execution of notebooks on each build.
