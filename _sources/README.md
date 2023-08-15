@@ -10,9 +10,23 @@ This repository contains the labs' handbook for [IM939: Data Science Across Disc
 
 The handbook uses [jupyter-book](https://jupyterbook.org/en/stable/intro.html).
 
+Render book locally:
+
+From the book's root:
+
+```bash
+jupyter-book build .
+```
+
+If you want the TOC to be regenerated:
+
+```bash
+jupyter-book build --all .
+```
+
 Publishing book to github pages:
 
-```
+```bash
 ghp-import -n -p -f _build/html
 ```
 
@@ -25,37 +39,37 @@ In this project, virtual environments are managed by `conda`, which means that y
 
 **Activate virtual environment**
 
-```
+```bash
 conda activate env/
 ```
 
 or, if  it is stored in `env/` folder:
 
-```
+```bash
 conda activate env/
 ```
 
 **Deactivate virtual environment:**
 
-```
+```bash
 conda deactivate
 ```
 
 **Update virtual environment from  `environment.yml`:**
 
-```
+```bash
 conda env update -f environment.yml
 ```
 
 **Recreate virtual environment from `environment.yml`:**
 
-```
+```bash
 conda env create -f environment.yml
 ```
 
 or, if we want to install the environment within the project:
 
-```
+```bash
 conda env create --prefix env -f environment.yml
 ```
 
@@ -63,6 +77,6 @@ conda env create --prefix env -f environment.yml
 
 We can create a file (in this case `environment.yml`) containing the exact libraries and versions used in the current environment. This can be useful to update the versions used in the environment in the future.
 
-```
+```bash
 conda env export > environment.yml
 ```

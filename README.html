@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Science Across Disciplines’ handbook &#8212; My sample book</title>
+    <title>Data Science Across Disciplines’ handbook &#8212; Data Science Across Disciplines</title>
   
   
   
@@ -228,7 +228,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.warwick.ac.uk/CIM-Methods/IM939_handbook" target="_blank"
+      <li><a href="https://github.com/WarwickCIM/IM939_handbook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -245,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.warwick.ac.uk/CIM-Methods/IM939_handbook/edit/main/README.md" target="_blank"
+      <li><a href="https://github.com/WarwickCIM/IM939_handbook/edit/main/README.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -262,7 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.warwick.ac.uk/CIM-Methods/IM939_handbook/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/WarwickCIM/IM939_handbook/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -405,8 +405,17 @@ document.write(`
 <section id="handbook">
 <h2>Handbook<a class="headerlink" href="#handbook" title="Permalink to this headline">#</a></h2>
 <p>The handbook uses <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">jupyter-book</a>.</p>
+<p>Render book locally:</p>
+<p>From the book’s root:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+<p>If you want the TOC to be regenerated:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>--all<span class="w"> </span>.
+</pre></div>
+</div>
 <p>Publishing book to github pages:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
 </pre></div>
 </div>
 </section>
@@ -415,32 +424,32 @@ document.write(`
 <p>Virtual environments are a way to install all the dependencies (and their right version) required for a certain project by isolating python and libraries’ specific versions. Every person who recreatesthe virtual environment will be using the same packages and versions, reducing errors and increasing reproducibility.</p>
 <p>In this project, virtual environments are managed by <code class="docutils literal notranslate"><span class="pre">conda</span></code>, which means that you should have <a class="reference external" href="https://www.anaconda.com">Anaconda distribution</a> installed (Read <a class="reference external" href="https://www.anaconda.com/distribution/">installing instructions on their website</a>)</p>
 <p><strong>Activate virtual environment</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">/</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>env/
 </pre></div>
 </div>
 <p>or, if  it is stored in <code class="docutils literal notranslate"><span class="pre">env/</span></code> folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env</span><span class="o">/</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>env/
 </pre></div>
 </div>
 <p><strong>Deactivate virtual environment:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>deactivate
 </pre></div>
 </div>
 <p><strong>Update virtual environment from  <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">update</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>update<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p><strong>Recreate virtual environment from <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p>or, if we want to install the environment within the project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">prefix</span> <span class="n">env</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>--prefix<span class="w"> </span>env<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 <p><strong>Freeze used dependencies into a file</strong></p>
 <p>We can create a file (in this case <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>) containing the exact libraries and versions used in the current environment. This can be useful to update the versions used in the environment in the future.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yml
 </pre></div>
 </div>
 </section>
@@ -511,7 +520,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Carlos Cámara-Menoyo, James Tripp, Cagatay Turkay
+By Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
 </p>
 
   </div>
